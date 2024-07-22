@@ -1,7 +1,7 @@
 import personaje
 import armas
 
-nombre =input("Bienvenido al juego de mamzmorra COMENZEMOS por elegir el nombre de tu personaje (Puede tener caracteres , numeros etc) :" )
+nombre =input("Bienvenido al juego de mamzmorra COMENZEMOS por elegir el nombre de tu personaje (Puede tener caracteres , numeros etc) : " )
 print("-----------------------------------------------------------------------------")
 guerrero = personaje.Guerrero(nombre)
 mago = personaje.Mago(nombre)
@@ -12,7 +12,7 @@ personaje.imprimir_atributos_tabla(personajes)
 
 print("-----------------------------------------------------------------------------")
 while True:
-    eleccion=int(input("Elegi la clase segun el nùmero que aparece(tomate tu tiempo luego no lo podras cambiar):"))
+    eleccion=int(input("Elegi la clase segun el nùmero que aparece(tomate tu tiempo luego no lo podras cambiar): "))
     if (eleccion==1):
         principal= personaje.Guerrero(nombre)
         break
