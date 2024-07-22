@@ -1,3 +1,4 @@
+import armas
 class Personaje:
     def __init__(self, nombre, vida, ataque, defensa, inteligencia, agilidad, fuerza):
         self.nombre = nombre
@@ -62,38 +63,15 @@ def imprimir_datos(personaje,nombre):
         linea += " ".join(f" {getattr(personaje, atributo):<{col_width}}")
         print(linea)
 
-nombre =input("Bienvenido al juego de mamzmorra COMENZEMOS por elegir el nombre de tu personaje (Puede tener caracteres , numeros etc) :" )
 # Ejemplo de creación de instancias
-guerrero = Guerrero(nombre)
-mago = Mago(nombre)
-arquero = Arquero(nombre)
-sanador = Sanador(nombre)
+
 
 # Lista de personajes
-personajes = [guerrero, mago, arquero, sanador]
+
 
 # Imprimir atributos en formato tabular
-print("-----------------------------------------------------------------------------")
-imprimir_atributos_tabla(personajes)
-print("-----------------------------------------------------------------------------")
 
-while True:
-    eleccion=int(input("Elegi la clase segun el nùmero que aparece(tomate tu tiempo luego no lo podras cambiar)"))
-    if (eleccion==1):
-        principal= Guerrero(nombre)
-        break
-    elif(eleccion==2):
-        principal= Mago(nombre)
-        break
-    elif(eleccion==3):
-        principal= Arquero(nombre)
-        break
-    elif(eleccion==4):
-        principal= Sanador(nombre)
-        break
-    else:
-        print("Eror ingrese un valor valido")
 
-print("-----------------------------------------------------------------------------")
-print("Genial tus estadistica quedan asi:")
-imprimir_datos(principal,nombre)
+
+
+
