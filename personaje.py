@@ -1,6 +1,6 @@
 import armas
 class Personaje:
-    def __init__(self, nombre, vida, ataque, defensa, inteligencia, agilidad, fuerza):
+    def __init__(self, nombre, vida, ataque, defensa, inteligencia, agilidad, fuerza, mana):
         self.nombre = nombre
         self.vida = vida
         self.ataque = ataque
@@ -8,22 +8,23 @@ class Personaje:
         self.inteligencia = inteligencia
         self.agilidad = agilidad
         self.fuerza = fuerza
+        self.mana = mana
 
 class Guerrero(Personaje):
     def __init__(self, nombre):
-        super().__init__(nombre, vida=150, ataque=20, defensa=30, inteligencia=5, agilidad=10, fuerza=20)
+        super().__init__(nombre, vida=150, ataque=20, defensa=30, inteligencia=5, agilidad=10, fuerza=20, mana=100)
 
 class Mago(Personaje):
     def __init__(self, nombre):
-        super().__init__(nombre, vida=80, ataque=10, defensa=10, inteligencia=30, agilidad=15, fuerza=5)
+        super().__init__(nombre, vida=80, ataque=10, defensa=10, inteligencia=30, agilidad=15, fuerza=5, mana=200)
 
 class Arquero(Personaje):
     def __init__(self, nombre):
-        super().__init__(nombre,vida=100, ataque=15, defensa=15, inteligencia=10, agilidad=25, fuerza=10)
+        super().__init__(nombre,vida=100, ataque=15, defensa=15, inteligencia=10, agilidad=25, fuerza=10, mana=150)
 
 class Sanador(Personaje):
     def __init__(self, nombre):
-        super().__init__(nombre, vida=90, ataque=5, defensa=20, inteligencia=25, agilidad=10, fuerza=5)
+        super().__init__(nombre, vida=90, ataque=5, defensa=20, inteligencia=25, agilidad=10, fuerza=5, mana=200)
 
 
 

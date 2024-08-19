@@ -1,7 +1,7 @@
 import personaje
 import armas
 
-nombre =input("Bienvenido al juego de mamzmorra COMENZEMOS por elegir el nombre de tu personaje (Puede tener caracteres , numeros etc) : " )
+nombre =input("Bienvenido al juego de mazmorra COMENCEMOS por elegir el nombre de tu personaje (Puede tener caracteres , numeros etc) : " )
 print("-----------------------------------------------------------------------------")
 guerrero = personaje.Guerrero(nombre)
 mago = personaje.Mago(nombre)
@@ -30,7 +30,7 @@ while True:
 
 print("-----------------------------------------------------------------------------")
 print("Genial Ahora a elegir tu arma inicial:")
-arma=armas.Armas_guerre
+arma=armas.Armas_guerrero
 
 armas.mostrar_armas(arma)
 # personaje.imprimir_datos(principal,nombre)
