@@ -9,7 +9,7 @@ class Armas:
             habilidades={}
         self.habilidades=habilidades
     
-
+# armas
 class Arma_guerre1(Armas):
     def __init__(self):
         super().__init__(nombre="Espada del Dragón", ataque=30, agilidad=5, vida_extra=50, probabilidad_critico=15, 
