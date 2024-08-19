@@ -9,7 +9,7 @@ arquero = personaje.Arquero(nombre)
 sanador = personaje.Sanador(nombre)
 personajes = [guerrero, mago, arquero, sanador]
 personaje.imprimir_atributos_tabla(personajes)
-
+#MOSTRAR CLASES
 print("-----------------------------------------------------------------------------")
 while True:
     eleccion=int(input("Elegi la clase segun el nùmero que aparece(tomate tu tiempo luego no lo podras cambiar): "))

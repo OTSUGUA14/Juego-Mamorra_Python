@@ -10,6 +10,7 @@ class Personaje:
         self.fuerza = fuerza
         self.mana = mana
 
+#PERSONAJES
 class Guerrero(Personaje):
     def __init__(self, nombre):
         super().__init__(nombre, vida=150, ataque=20, defensa=30, inteligencia=5, agilidad=10, fuerza=20, mana=100)
